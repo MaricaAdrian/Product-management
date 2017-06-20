@@ -1,0 +1,33 @@
+body {
+  min-height: 2000px;
+  padding-top: 70px;
+}
+
+.page {
+  padding: 40px 15px;
+}
+
+.fixed {
+	
+	width: 100%;
+	position: fixed;
+	top: 10;
+	left: 0;
+	z-index: 99;
+	display: none;
+	
+}
+
+span.glyphicon {
+	
+	padding-left: 15px;
+	
+}
+
+span.glyphicon:hover{
+	
+	text-decoration: underline;
+	cursor: pointer;
+	color: #337ab7;
+	
+}

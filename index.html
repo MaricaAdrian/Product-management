@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Meta Tags -->
+<meta charset="UTF-8">
+<meta name="author" content="Marica Adrian-Gabriel">
+<meta name="description" content="Soluție Marica Adrian-Gabriel">
+<meta name="keywords" content="Soluție, Marica Adrian-Gabriel, Modern Web Development, Caphyon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Link Tags -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="css/style.css">
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+<title>Soluție - Marica Adrian-Gabriel</title>
+</head>
+
+<body>
+
+ <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Meniu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Gestionare produse</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#top">Top</a></li>
+          </ul>
+          <ul id="navbarUL" class="nav navbar-nav navbar-right">
+            <li><a href="#productClass">Vizualizare produse</a></li>
+            <li><a href="#productAdd">Adaugare produse</a></li>
+          </ul>
+        </div>
+      </div>
+</nav>
+		<div class="fixed">
+		
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-md-6 col-md-offset-3 text-center">
+						<div class="alert fade in" id="statusDiv">
+							<span id="statusInfo"></span>
+					    </div>
+					</div>
+			  </div>
+			</div>
+		
+		</div>
+    <div class="container">
+
+	
+
+		<div id="top" class="jumbotron text-center">
+			<h1>Gestionare produse</h1>
+		</div>
+	  
+		<div class="page">
+	  
+			<div id="productClass" class="panel panel-primary">
+				<div class="panel-heading text-center">
+					<h3 class="panel-title">Vizualizare produse</h3>
+				</div>
+				<div class="panel-body">
+				  <h2 class="text-center"> <p id="status"></p> </h2>
+					<div class="col-sm-12">
+						<ul class="list-group" id="productList">
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div id="productAdd" class="panel panel-primary">
+				<div class="panel-heading text-center">
+					<h2 class="panel-title">Adaugare produs</h2>
+				</div>
+				<div class="panel-body">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="productName">Denumire produs:</label>
+							<div class="col-sm-4">
+							<input type="text" class="form-control" id="productName">
+							</div>
+					    </div>
+					    <div class="form-group">
+							<label class="control-label col-sm-2" for="productQuantity">Cantitate:</label>
+							<div class="col-sm-2"> 
+							<input type="text" class="form-control" id ="productQuantity">
+							</div>
+							<div class="col-sm-2"> 
+							<select class="form-control" id="productQuantityAttr">
+								<option>Bucați</option>
+								<option>Kilograme</option>
+								<option>Grame</option>
+								<option>Bax-uri</option>
+							</select>
+							</div>
+					    </div>
+					  <div class="col-sm-offset-2 col-sm-10">
+						  <button type="button" class="btn btn-default btn-lg" id="productSubmit">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Adaugă
+						  </button>
+					  </div>
+					</form>
+				</div>
+				<div class="panel-footer text-center">
+					<h3><span class="glyphicon glyphicon-info"></span></h3>
+				</div>
+			</div>
+		
+	  </div>
+
+    </div>
+	
+	<script src="js/functions.js"></script>
+	
+</body>
+
+</html>
